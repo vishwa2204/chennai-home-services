@@ -678,6 +678,7 @@ a {
     height: 200px;
     text-align: center;
     cursor: pointer;
+    justify-content: center;
     border: 1px solid var(--white);
     /* background-color: var(--gray); */
     padding: 2%;
