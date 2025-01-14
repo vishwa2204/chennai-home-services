@@ -13,15 +13,20 @@
 
 :root {
     --color: #83ce00;
-    --color1: #214331;
+    --color1: #003b1c;
     --bg-color: #11202d;
     --text: #002c5d;
     --white: #fff;
     --black: #0e0d0d;
     --gray: rgb(231, 231, 231);
     --text-gray: #a1a1a1;
+    --bg-sec:#003b1b38;
 }
 
+::selection{
+    background-color: var(--color1);
+    color: var(--white);
+}
 
 
 /* Font size  */
@@ -759,7 +764,7 @@ a {
 .homeServices{
     width: 100%;
     height: auto;
-    background-color: #2a2a2a0b;
+    background-color: var(--bg-sec);
 }
 
 .homeService-title{
