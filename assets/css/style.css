@@ -672,8 +672,10 @@ a {
 
 
 
+
 .after-banner-boxs{
     width: 30%;
+    height: 200px;
     text-align: center;
     cursor: pointer;
     border: 1px solid var(--white);
@@ -682,8 +684,19 @@ a {
 
 }
 
+@media screen and (min-width:768px) {
+    
+.after-banner-boxs:nth-child(1){
+    border-top-left-radius: 50px;
+}
+.after-banner-boxs:nth-child(3){
+    border-top-right-radius: 50px;
+
+}
+
+}
 .after-banner-boxs h3{
-    color: var(--black);
+    color: var(--white);
     font-size: 18px !important;
     font-weight: 800 !important;
     text-transform: uppercase;
