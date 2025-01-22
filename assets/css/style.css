@@ -18,7 +18,7 @@
 
 
 :root {
-    --color: #83ce00;
+    --color: #81ca01;
     --color1: #003b1c;
     --bg-color: #11202d;
     --text: #002c5d;
@@ -1333,6 +1333,12 @@ footer .footer-boxes .footer-first p {
 
 
 footer .footer-boxes .footer-first ul li a {
+    font-size: 12px;
+    text-decoration: dotted;
+    color: var(--black);
+}
+
+footer .footer-boxes .footer-first ul li {
     font-size: 12px;
     text-decoration: dotted;
     color: var(--black);
