@@ -93,7 +93,6 @@ a {
     max-width: 100px;
     height: 100%;
     background-color: var(--white);
-    border-right: 1px solid var(--gray);
 }
 
 .nav-container .nav-brand-logo a {
@@ -120,6 +119,7 @@ a {
     width: 100%;
     height: 50%;
     border-bottom: 1px solid var(--gray);
+    background-color: var(--color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,18 +139,18 @@ a {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    color: var(--text-gray);
+    color: var(--black);
 }
 
 .nav-contact-container a i {
     font-size: 16px;
-    color: var(--white);
+    color: var(--black);
 }
 
 .nav-contact-container a span:nth-child(1) {
     width: 30px;
     height: 30px;
-    background-color: var(--color);
+    background-color: var(--white);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -159,7 +159,7 @@ a {
 }
 
 .nav-contact-container a span:nth-child(2) {
-    color: var(--text-gray);
+    color: var(--white);
     font-size: 13px;
 }
 
@@ -819,7 +819,7 @@ a {
 .swiper-button-next:after,
 .swiper-button-prev:after {
     color: var(--color) !important;
-    font-size: 25px !important;
+    font-size: 13px !important;
 }
 
 /* --//////Banner///////////---- */
@@ -911,7 +911,7 @@ a {
     border: 1px solid var(--white);
     border-radius: 50%;
     font-size: 18px;
-    /* background-color: var(--color); */
+    background-color: var(--color);
     color: var(--white);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
@@ -1076,38 +1076,6 @@ a {
     /* border: 1px solid var(--black); */
 }
 
-.home-spares-container .home-spareBoxs:nth-child(5){
-    width: 70%;
-    height: 400px;
-
-}
-
-.home-spares-container .home-spareBoxs:nth-child(5) img{
-    width: 30%;
-    height: 300px;
-    object-fit: cover;
-}
-
-@media screen and (max-width:992px) {
-    .home-spares-container .home-spareBoxs:nth-child(5){
-        width: 70%;
-        height: 300px;
-    
-    }
-    .home-spares-container .home-spareBoxs:nth-child(5) img{
-        width: 47%;
-        height: 180px;
-        object-fit: cover;
-    }
-}
-
-@media screen and (max-width:500px) {
-    .home-spares-container .home-spareBoxs:nth-child(5){
-        width: 100%;
-        height: 300px;
-    
-    }
-}
 .home-spares-container .home-spareBoxs img {
     width: 80px;
     height: 80px;
