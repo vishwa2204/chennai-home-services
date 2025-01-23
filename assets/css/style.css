@@ -322,7 +322,7 @@ a {
     }
 
     .nav-contact-container a span:nth-child(2) {
-        color: var(--text-gray);
+        /* color: var(--text-gray); */
         font-size: 12px;
     }
 
@@ -330,7 +330,7 @@ a {
 
 @media screen and (max-width:900px) {
     .nav-contact-container a span:nth-child(2) {
-        color: var(--text-gray);
+        /* color: var(--text-gray); */
         font-size: 9px;
     }
 
