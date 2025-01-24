@@ -1,0 +1,185 @@
+:root {
+    --color: #81ca01;
+    --color1: #003b1c;
+    --bg-color: #11202d;
+    --text: #002c5d;
+    --white: #fff;
+    --black: #0e0d0d;
+    --gray: rgb(231, 231, 231);
+    --text-gray: #a1a1a1;
+    --bg-sec: #89898938;
+}
+
+
+.gallery-container {
+    text-align: center;
+}
+
+.gallery-container .gallery-title h3 {
+    color: var(--color);
+    font-weight: 900;
+}
+
+.gallery-container .gallery-title p {
+    color: var(--black);
+}
+
+.col-lg-3 a {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.col-lg-3:hover a {
+    opacity: 30%;
+
+}
+
+.col-lg-3 a img {
+    width: 100% !important;
+    height: 200px;
+    object-fit: cover;
+}
+
+.commonTitle {
+    color: var(--color1);
+    font-weight: 900;
+}
+
+
+.common-issues-title h2::before {
+    content: '';
+    width: 70px;
+    height: 5px;
+    background-color: var(--color1);
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    transform: translateX(0);
+}
+
+.price_section-table {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 25px;
+    width: 60%;
+    background-color: var(--bg-sec);
+
+}
+
+.price_section-table table tbody {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: start;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.price_section-table table tbody tr {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+
+}
+
+.price_section-table table tbody tr:nth-child(even) {
+    background-color: var(--white);
+}
+
+.price_section-table table tbody tr:nth-child(1) {
+    background-color: var(--color1);
+    color: var(--white);
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.price_section-table table tbody tr td:nth-child(1),
+.price_section-table table tbody tr th:nth-child(1) {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.price_section-table table tbody tr td:nth-child(2),
+.price_section-table table tbody tr th:nth-child(2) {
+    width: 27%;
+    display: flex;
+    padding: 15px;
+    align-items: center;
+}
+
+@media screen and (max-width:768px) {
+    .price_section-table {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 25px;
+        width: 100%;
+        background-color: var(--bg-sec);
+
+    }
+
+    .price_section-table table tbody tr {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 5px;
+
+    }
+
+
+
+    .price_section-table table tbody tr td:nth-child(1),
+    .price_section-table table tbody tr th:nth-child(1) {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        font-size: 13px;
+    }
+
+    .price_section-table table tbody tr td:nth-child(2),
+    .price_section-table table tbody tr th:nth-child(2) {
+        width: 30%;
+        display: flex;
+        padding: 15px;
+        align-items: center;
+        font-size: 13px;
+    }
+
+
+    .price_section-table table tbody tr th {
+        background-color: var(--color1);
+        color: var(--white);
+        font-size: 17px !important;
+        font-weight: 900;
+    }
+
+}
+
+.two-div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.two-div .twoBoxs{
+    width: 310px;
+    height: 70px;
+    background-color: var(--color1);
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    color: var(--white);
+    border-radius: 50px;
+}
+
+.two-div .twoBoxs:nth-child(2){
+  
+    background-color: var(--color);
+  
+}
