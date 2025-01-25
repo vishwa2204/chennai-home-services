@@ -336,7 +336,7 @@ a {
 
     .nav-menus {
         width: 100%;
-        height: auto;
+        height: 800px;
         position: absolute;
         top: 100%;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
