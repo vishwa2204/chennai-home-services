@@ -52,7 +52,7 @@
                                 91177
                             </span>
                         </a>
-                        <a href="+918056622733">
+                        <a href="https://wa.me/+918056622733" target="_blank">
                             <span><i class="fa-brands fa-whatsapp"></i></span>
                             <span>WhatsApp: +91 80566 22733</span>
                         </a>
@@ -190,7 +190,7 @@
                                             91177</span>
                                     </div>
                                 </a>
-                                <a href="#"
+                                <a href="https://wa.me/+918056622733" target="_blank"
                                     class="book_btn_boxs d-flex justify-content-center align-items-center gap-3">
                                     <div class="book_icon">
                                         <i class="fa-brands fa-whatsapp fa-shake"></i>
@@ -302,16 +302,18 @@
 
         </div>
         <div class="form-section">
-            <form>
+            <form  method="POST" onsubmit="return contact(event)">
                 <fieldset>
-                    <input type="text" placeholder="Enter Your Name" required> <br>
-                    <input type="email" placeholder="Enter Your Email" required> <br>
-                    <input type="number" placeholder="Enter Your Number" required> <br>
-                    <textarea name="Message" id="Message" cols="30" rows="5" placeholder="Message Here"
+                    <input type="text" id="name" placeholder="Enter Your Name" required> <br>
+                    <input type="email" id="email" placeholder="Enter Your Email" required> <br>
+                    <input type="number" id="number" placeholder="Enter Your Number" required> <br>
+                    <textarea name="Message" id="message" cols="30" rows="5" placeholder="Message Here"
                         required></textarea>
                     <button type="submit">Submit</button>
                 </fieldset>
             </form>
+            
+            
         </div>
     </section>
 
@@ -325,6 +327,21 @@
 
 
     <!-- Iframe section end -->
+
+       <!-- WorkSite Gallery section  -->
+
+       <section class="homeServices homeServices2  text-center">
+        <div class="homeServices-container container">
+          
+            <div class="socialMedia d-flex justify-content-center gap-5">
+                <a href="#"><i class="fa-brands fa-shake fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-shake fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-shake fa-youtube"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WorkSite Gallery section  -->
 
     <!--/////////////////////////// footer section start/////////////////////// -->
 
@@ -591,6 +608,42 @@
 
     </script>
 
+
+<script>
+    function contact(event) {
+        // Prevent the default form submission behavior
+        event.preventDefault();
+
+        // Retrieve input values
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var number = document.getElementById("number").value;
+        var message = document.getElementById("message").value;
+
+        // Validate fields
+        if (!name || !email || !number || !message) {
+
+            return false; // Prevent further action
+            alert("Enter All Fields");
+        }
+
+        // Format the message content
+        var formattedMessage = encodeURIComponent(
+            "Name: " + name + "\n" +
+            "Email: " + email + "\n" +
+            "Mobile Number: " + number + "\n" +
+            "Message: " + message
+        );
+
+        // Construct the WhatsApp URL
+        var url = "https://wa.me/+918056622733?text=" + formattedMessage;
+
+        // Open the WhatsApp URL in a new tab/window
+        window.open(url, '_blank');
+
+        return false; // Prevent form submission
+    }
+</script>
 
     <script>
         var dropFun = document.querySelector('.drop');
