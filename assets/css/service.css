@@ -183,3 +183,13 @@
     background-color: var(--color);
   
 }
+
+.common-issues center img{
+    width: 40%;
+}
+
+@media screen and (max-width:500px) {
+    .common-issues center img{
+        width: 100%;
+    }
+}
