@@ -20,7 +20,6 @@
 
     <!-- Swiper Elements  -->
     <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 
     <!--//// fONT AWESOME //// -->
@@ -30,6 +29,7 @@
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -225,13 +225,13 @@
                                         <span class="#"><i class="fa-solid fa-check"></i></span>
                                     </div>
                                     <div class="after-banner-content">
-                                        <h3>Trusted Technecians</h3>
+                                        <h3>Trusted Technicians</h3>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                   
+
                     <div class="swiper-slide">
                         <img src="assets/images/banner/3.jpg" alt="Chennai-Home-Service">
                         <div class="banner-content px-2">
@@ -283,7 +283,7 @@
                                         <span class="#"><i class="fa-solid fa-check"></i></span>
                                     </div>
                                     <div class="after-banner-content">
-                                        <h3>Trusted Technecians</h3>
+                                        <h3>Trusted Technicians</h3>
                                     </div>
                                 </div>
                             </div>
@@ -340,7 +340,7 @@
                                         <span class="#"><i class="fa-solid fa-check"></i></span>
                                     </div>
                                     <div class="after-banner-content">
-                                        <h3>Trusted Technecians</h3>
+                                        <h3>Trusted Technicians</h3>
                                     </div>
                                 </div>
                             </div>
@@ -397,7 +397,7 @@
                                         <span class="#"><i class="fa-solid fa-check"></i></span>
                                     </div>
                                     <div class="after-banner-content">
-                                        <h3>Trusted Technecians</h3>
+                                        <h3>Trusted Technicians</h3>
                                     </div>
                                 </div>
                             </div>
@@ -454,7 +454,7 @@
                                         <span class="#"><i class="fa-solid fa-check"></i></span>
                                     </div>
                                     <div class="after-banner-content">
-                                        <h3>Trusted Technecians</h3>
+                                        <h3>Trusted Technicians</h3>
                                     </div>
                                 </div>
                             </div>
@@ -512,7 +512,7 @@
                                         <span class="#"><i class="fa-solid fa-check"></i></span>
                                     </div>
                                     <div class="after-banner-content">
-                                        <h3>Trusted Technecians</h3>
+                                        <h3>Trusted Technicians</h3>
                                     </div>
                                 </div>
                             </div>
@@ -584,7 +584,7 @@
                     <div class="homeService-image"><img src="assets/images/icons/11.png" alt="service-icon"></div>
                     <h5>Bathroom Cleaning</h5>
                 </a>
-                <a href="painting-service.html" class="homeServices-boxs">
+                <a href="cooler-and-freezer-service.html" class="homeServices-boxs">
                     <div class="homeService-image"><img src="assets/images/icons/12.png" alt="service-icon"></div>
                     <h5>Cooler and Freezer</h5>
                 </a>
@@ -898,8 +898,6 @@
 
 
 
-    <!-- jQuery Elements  -->
-    <script src="assets/js/jquery.js"></script>
 
     <!-- JS Elements  -->
     <script src="assets/js/script.js"></script>
@@ -907,25 +905,34 @@
     <!-- Bootstrap Elements  -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
 
+    <!-- jQuery Elements  -->
+    <script src="assets/js/jquery.js"></script>
     <!-- Owl Carousel  -->
     <script src="assets/js/owl.carousel.min.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+
     <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            loop: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
+        document.addEventListener("DOMContentLoaded", function () {
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                autoplay: {
+                    delay: 3000, // Adjust timing (3000ms = 3 seconds)
+                    disableOnInteraction: false, // Keep autoplay after user interaction
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
         });
     </script>
 
