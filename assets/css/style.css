@@ -981,6 +981,21 @@ a {
 
 
 
+.homeService-title h3 {
+    color: var(--color1);
+    letter-spacing: 5px;
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 0px !important;
+
+}
+.homeService-title p {
+    text-align: justify;
+    
+}
+
+
+
 .homeService-title h2::before {
     content: '';
     width: 100px;
