@@ -90,8 +90,8 @@ a {
 }
 
 .nav-container .nav-brand-logo {
-    min-width: 8%;
-    max-width: 8%;
+    min-width: 100px;
+    max-width: 100px;
     height: 100%;
     background-color: var(--color);
 }
@@ -106,13 +106,13 @@ a {
 }
 
 .nav-container .nav-brand-logo a img {
-    width: 100% ;
+    width: 100px ;
     height: 100px;
     object-fit: contain;
 }
 
 .nav-menu-container {
-    width: 92%;
+    width: 95%;
     height: 100%;
 }
 
