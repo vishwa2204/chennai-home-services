@@ -54,6 +54,9 @@ h4 {
     font-size: 24px;
 }
 
+h5{
+    color: var(--black);
+}
 
 h6 {
     font-size: 16px;
