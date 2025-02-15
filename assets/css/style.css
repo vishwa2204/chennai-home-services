@@ -745,7 +745,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
     z-index: 3;
 }
 
@@ -759,7 +759,7 @@ a {
     text-align: center;
     font-size: 60px !important;
     font-weight: 900;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
 }
 
 .banner-content h1 span {
