@@ -143,7 +143,7 @@
 
     .contact-address-boxs {
         width: 47%;
-        height: 150px;
+        height: 200px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -167,7 +167,7 @@
 
     .contact-address-boxs {
         width: 47%;
-        height: 150px;
+        height: 200px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -191,7 +191,7 @@
 
     .contact-address-boxs {
         width: 30%;
-        height: 150px;
+        height: 200px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
