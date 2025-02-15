@@ -1536,3 +1536,44 @@ footer .footer-boxes .footer-first img {
 
 
 /* Mediaqueries  */
+
+.modal-body input{
+    padding: 1%;
+    border: none;
+    background-color: var(--bg-sec);
+}
+
+.modal-body select{
+    padding: 1%;
+    border: none;
+    background-color: var(--bg-sec);
+    margin-bottom: 20px;
+}
+
+.google{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+    z-index: 999;
+    animation: 1s pop linear infinite;
+}
+
+.google img{
+    width: 100%;
+}
+
+@keyframes pop {
+    0%{
+        scale: 1;
+    }
+    50%{
+        scale: 1.1;
+
+    }
+    100%{
+        scale: 1;
+
+    }
+}

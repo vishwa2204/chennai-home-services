@@ -34,6 +34,81 @@
 </head>
 
 <body>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">WhatsApp Booking</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body " style="height: 350px;">
+                    <form method="POST" onsubmit="return contact1(event)">
+                        <fieldset class="d-flex flex-column">
+                            <input type="text" id="name" placeholder="Enter Your Name" required class="mb-3">
+                            <input type="number" id="number" placeholder="Enter Your Phone Number" required class="mb-3">
+                            <input type="text" id="location" placeholder="Enter Your Location" required class="mb-3">
+                            <select required id="service">
+                                <option>AC SERVICES</option>
+                                <option>REFRIGERATOR SERVICES</option>
+                                <option> WASHING MACHINE SERVICES</option>
+                                <option>PLUMBING SERVICES</option>
+                                <option>ELECTRICAL SERVICES</option>
+                                <option> RO WATER PURIFIER SERVICES</option>
+                                <option>CCTV SERVICES</option>
+                                <option>Mosquito & Safety Net SERVICES</option>
+                                <option>AUTOMATIC WATER LEVEL CONTROLLER SERVICES</option>
+                                <option>SUMP & TANK CLEANING SERVICES</option>
+                                <option> BATHROOM CLEANING SERVICES</option>
+                                <option> COOLER AND FREEZER SERVICES</option>
+                            </select>
+                            <button type="submit" class="btn"
+                                style=" background-color: var(--color); color: var(--white);">Submit</button>
+                        </fieldset>
+                    </form>
+
+
+                    <script>
+                        function contact1(event) {
+                            // Prevent the default form submission behavior
+                            event.preventDefault();
+                
+                            // Retrieve input values
+                            var name = document.getElementById("name").value;
+                            var location = document.getElementById("location").value;
+                            var number = document.getElementById("number").value;
+                            var services = document.getElementById("service").value;
+                
+                            // Validate fields
+                            if (!name || !location || !number || !services) {
+                
+                                return false; // Prevent further action
+                                alert("Enter All Fields");
+                            }
+                
+                            // Format the message content
+                            var formattedMessage = encodeURIComponent(
+                                "Name: " + name + "\n" +
+                                "Location: " + location + "\n" +
+                                "Mobile Number: " + number + "\n" +
+                                "Services: " + services
+                            );
+                
+                            // Construct the WhatsApp URL
+                            var url = "https://wa.me/+918056622733?text=" + formattedMessage;
+                
+                            // Open the WhatsApp URL in a new tab/window
+                            window.open(url, '_blank');
+                
+                            return false; // Prevent form submission
+                        }
+                    </script>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- navbar section Start  -->
 
     <nav class="navbar-main">
@@ -148,10 +223,10 @@
                         </ul>
                     </div>
                     <div class="nav-social-links">
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/share/1bHtMpKm5o/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/chennaihomeservice?igsh=MW5xOWMwZnQ2eGc2eg=="><i class="fa-brands fa-instagram"></i></a>
                         <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://x.com/HomeChenna57210?t=BmPcoN2Ka069vQLpEOL5Qg&s=09"><i class="fa-brands fa-twitter"></i></a>
                     </div>
                     <button class="nav-toggler">
                         <span class="ham1"></span>
@@ -189,13 +264,15 @@
                                             91177</span>
                                     </div>
                                 </a>
-                                <a href="https://wa.me/+918056622733" target="_blank"
-                                    class="book_btn_boxs d-flex justify-content-center align-items-center gap-3">
+                                <a href="#" target="_blank"
+                                    class="book_btn_boxs d-flex justify-content-center align-items-center gap-3" 
+                                    type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
                                     <div class="book_icon">
                                         <i class="fa-brands fa-whatsapp fa-shake"></i>
                                     </div>
                                     <div class="book-content">
-                                        <span>WhatsApp</span>
+                                        <span>WhatsApp Book</span>
                                     </div>
                                 </a>
                             </div>
@@ -430,7 +507,7 @@
                 <ul class="branch">
                     <li>
 
-                        <a href="#" target="_blank">No.41, Ayyavu street, behind k.k nagar bus depo road, bharathidasan
+                        <a href="https://www.google.com/maps?q=13.0326075,80.2030035" target="_blank">No.41, Ayyavu street, behind k.k nagar bus depo road, bharathidasan
                             colony,West Jafferkhanpet , Chennai-600083</a>
                     </li>
 
@@ -490,19 +567,26 @@
 
                 </ul>
             </div>
-            <div class="footer-first">
+            <div class="footer-first mb-2">
                 <h5>Follow Us</h5>
                 <div class="footer-social-medias">
-                    <a href="#" class="footer-social">
+                    <a href="https://www.facebook.com/share/1bHtMpKm5o/" class="footer-social">
                         <i class="fa-brands fa-facebook"></i>
                     </a>
-                    <a href="#" class="footer-social">
+                    <a href="https://www.instagram.com/chennaihomeservice?igsh=MW5xOWMwZnQ2eGc2eg==" class="footer-social">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
-                    <a href="#" class="footer-social">
-                        <i class="fa-brands fa-youtube"></i>
+                    <a href="https://x.com/HomeChenna57210?t=BmPcoN2Ka069vQLpEOL5Qg&s=09" class="footer-social">
+                        <i class="fa-brands fa-x-twitter"></i>
                     </a>
                 </div>
+            </div>
+            <div class="footer-first">
+                <h5>Our customers</h5>
+                <ul class="branch">
+                    <li class="mb-0" style="list-style-type: circle;">5000+ Happy Customers | Every Customer is Valuable! </li>
+                    <li class="mb-0" style="list-style-type: circle;">Serving Individuals, Apartments & Commercial Spaces!</li>
+                </ul>
             </div>
         </div>
 
@@ -582,10 +666,13 @@
 
     <!-- After Footer Start -->
 
-    <section class="after-footer">
+   <section class="after-footer">
         <p>Copyright @ 2025 Chennai Home Service.</p>
     </section>
 
+    <a href="https://www.google.com/maps?q=13.0326075,80.2030035" target="_blank" class="google">
+        <img src="assets/images/png/1.png" alt="google">
+    </a>
     <!-- After Footer End -->
 
 
