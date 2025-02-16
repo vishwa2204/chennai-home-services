@@ -14,6 +14,7 @@
     font-family: 'gowthamrounded-book';
 
 }
+
 html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -58,7 +59,7 @@ h4 {
     font-size: 24px;
 }
 
-h5{
+h5 {
     color: var(--black);
 }
 
@@ -113,7 +114,7 @@ a {
 }
 
 .nav-container .nav-brand-logo a img {
-    width: 100px ;
+    width: 100px;
     height: 100px;
     object-fit: contain;
 }
@@ -996,9 +997,10 @@ a {
     margin-bottom: 0px !important;
 
 }
+
 .homeService-title p {
     text-align: justify;
-    
+
 }
 
 
@@ -1537,42 +1539,61 @@ footer .footer-boxes .footer-first img {
 
 /* Mediaqueries  */
 
-.modal-body input{
+.modal-body input {
     padding: 1%;
     border: none;
     background-color: var(--bg-sec);
 }
 
-.modal-body select{
+.modal-body select {
     padding: 1%;
     border: none;
     background-color: var(--bg-sec);
     margin-bottom: 20px;
 }
 
-.google{
+.google {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 70px;
-    height: 70px;
+    bottom: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
     z-index: 999;
     animation: 1s pop linear infinite;
 }
 
-.google img{
+.arrow-up {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white) !important;
+    z-index: 999;
+    background-color: var(--color);
+    opacity: 0.5;
+    animation: 1s pop linear infinite;
+}
+
+.google img {
     width: 100%;
 }
 
 @keyframes pop {
-    0%{
+    0% {
         scale: 1;
     }
-    50%{
+
+    50% {
         scale: 1.1;
 
     }
-    100%{
+
+    100% {
         scale: 1;
 
     }
